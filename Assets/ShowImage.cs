@@ -15,8 +15,8 @@ public class ShowImage : MonoBehaviour, IInputClickHandler
 
     // Use this for initialization
     void Start () {
-		
-	}
+        transform.Find("Image").gameObject.SetActive(imageShown);
+    }
 	
 	// Update is called once per frame
 	void Update () {

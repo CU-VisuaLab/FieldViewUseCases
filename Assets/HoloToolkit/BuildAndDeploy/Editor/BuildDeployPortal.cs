@@ -97,7 +97,7 @@ namespace HoloToolkit.Unity
 #if UNITY_2017_2_OR_NEWER
                         webRequest.isNetworkError || webRequest.isHttpError && 
 #else
-                        webRequest.isError &&
+                        webRequest.isNetworkError &&
 #endif
                         webRequest.responseCode != 401)
                     {
@@ -185,7 +185,7 @@ namespace HoloToolkit.Unity
 #if UNITY_2017_2_OR_NEWER
                         webRequest.isNetworkError || webRequest.isHttpError && 
 #else
-                        webRequest.isError &&
+                        webRequest.isNetworkError &&
 #endif
                         webRequest.responseCode != 401)
                     {
@@ -259,7 +259,7 @@ namespace HoloToolkit.Unity
 #if UNITY_2017_2_OR_NEWER
                         webRequest.isNetworkError || webRequest.isHttpError && 
 #else
-                        webRequest.isError &&
+                        webRequest.isNetworkError &&
 #endif
                         webRequest.responseCode != 401)
                     {
